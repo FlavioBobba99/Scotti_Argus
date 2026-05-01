@@ -90,3 +90,45 @@
 .nav-links a.active {
     border-bottom: 2px solid white; /* Fa apparire la linea bianca sotto */
 }
+
+/* Stile generale per distanziare le sezioni */
+section {
+    padding: 80px 50px; /* Spazio vuoto sopra/sotto e ai lati */
+    min-height: 100vh; /* Rende la sezione alta almeno quanto l'intero schermo */
+}
+
+/* Stile specifico per la sezione servizi */
+.servizi-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centra verticalmente testo e foto */
+    gap: 50px; /* Spazio tra testo e foto */
+    max-width: 1200px;
+    margin: 0 auto; /* Centra tutto il blocco nello schermo */
+}
+
+.testo-servizi {
+    flex: 1; /* Prende metà dello spazio disponibile */
+}
+
+.testo-servizi h2 {
+    font-size: 36px;
+    color: #0f4c75; /* Il blu aziendale */
+    margin-bottom: 20px;
+}
+
+.testo-servizi p {
+    font-size: 18px;
+    line-height: 1.6; /* Rende il testo più leggibile */
+    color: #333;
+}
+
+.immagine-servizi {
+    flex: 1; /* Prende l'altra metà dello spazio */
+}
+
+.immagine-servizi img {
+    width: 100%; /* L'immagine non uscirà mai dal suo contenitore */
+    border-radius: 8px; /* Arrotonda leggermente gli angoli */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Aggiunge una leggera ombra 3D */
+}
