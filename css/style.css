@@ -1,0 +1,92 @@
+/* Resetta i margini di default del browser e usa un font pulito */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- TOP BAR (Primo livello) --- */
+.top-bar {
+    background-color: #eaeaea; /* Grigio chiaro */
+    padding: 10px 50px;
+    display: flex;
+    justify-content: flex-end; /* Spinge tutto a destra */
+}
+
+.contact-info {
+    display: flex;
+    gap: 30px; /* Spazio tra email e telefono */
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #555; /* Grigio scuro per il testo */
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Spazio tra l'icona e il testo */
+}
+
+.contact-info span {
+    color: #e67e22; /* Colore arancione per le icone */
+    font-size: 16px;
+}
+
+/* --- MAIN NAV (Secondo livello) --- */
+.main-nav {
+    background-color: #0f4c75; /* Blu scuro aziendale */
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between; /* Brand a sinistra, Link a destra */
+    align-items: center;
+}
+
+/* Stile del blocco Brand (Logo + Nome) */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Il quadratino arancione del logo */
+.logo-square {
+    width: 30px;
+    height: 20px;
+    background-color: #e67e22; /* Arancione */
+}
+
+.company-name {
+    color: white;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif; /* Font con le grazie come nell'immagine */
+}
+
+/* Stile della lista dei link */
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Separatori verticali (|) */
+.separator {
+    color: rgba(255, 255, 255, 0.5); /* Bianco semitrasparente */
+    font-weight: 300;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 5px; /* Crea spazio per la linea inferiore */
+    border-bottom: 2px solid transparent; /* Linea invisibile di default */
+    transition: all 0.3s ease; /* Rende morbidi i cambiamenti di stato */
+}
+
+/* Effetto al passaggio del mouse o quando si è nella sezione (classe active) */
+.nav-links a:hover,
+.nav-links a.active {
+    border-bottom: 2px solid white; /* Fa apparire la linea bianca sotto */
+}
